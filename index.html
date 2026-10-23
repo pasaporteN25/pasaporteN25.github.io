@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#081818">
+    <meta name="description" content="Portfolio de pasaporteN25: proyectos de software, aplicaciones móviles y videojuegos en desarrollo.">
+    <title>pasaporteN25 — proyectos en movimiento</title>
+    <link rel="stylesheet" href=".impeccable/build/scaffold/layout.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#software" data-es="Saltar al mapa de proyectos" data-en="Skip to project map">Saltar al mapa de proyectos</a>
+    <main class="stage" id="top">
+      <header class="topbar">
+        <h1 class="brand r-brand">pasaporteN25</h1>
+        <nav class="navigation r-navigation" aria-label="Navegación principal">
+          <a class="nav-link is-active" href="#software" data-es="Proyectos" data-en="Projects">Proyectos</a>
+          <a class="nav-link" href="#about" data-es="Acerca de mí" data-en="About">Acerca de mí</a>
+          <div class="language-switch" role="group" aria-label="Idioma">
+            <button type="button" data-language="es" aria-pressed="true">ES</button><span aria-hidden="true">|</span><button type="button" data-language="en" aria-pressed="false">EN</button>
+          </div>
+          <a class="profile-link" href="https://github.com/pasaporteN25" target="_blank" rel="noreferrer" aria-label="Ver perfil de pasaporteN25 en GitHub">GitHub</a>
+        </nav>
+      </header>
+      <nav class="left-index r-left-index" aria-label="Líneas de trabajo">
+        <a href="#software" class="index-item index-software"><span class="index-dot" aria-hidden="true"></span><span data-es="Software / Mobile" data-en="Software / Mobile">Software / Mobile</span></a>
+        <a href="#videogames" class="index-item index-games"><span class="index-dot" aria-hidden="true"></span><span data-es="Videojuegos" data-en="Video games">Videojuegos</span></a>
+      </nav>
+      <section class="software-network r-software-network" id="software" aria-labelledby="software-title">
+        <h2 class="software-heading r-software-heading" id="software-title" data-es="Software / Mobile" data-en="Software / Mobile">Software / Mobile</h2>
+        <svg class="software-rail r-software-rail" viewBox="0 0 1100 14" preserveAspectRatio="none" aria-hidden="true">
+          <path class="rail-stem" d="M0 11H1100"/><path class="rail-tail" d="M1100 11H1235"/><circle class="rail-end" cx="0" cy="11" r="5"/><circle class="rail-end" cx="942" cy="11" r="5"/><circle class="rail-end" cx="1100" cy="11" r="5"/>
+        </svg>
+        <button class="project-station movie-station r-movie-station is-selected" type="button" data-project="movieInbox" aria-pressed="true" aria-controls="project-card" aria-label="Movie Inbox">
+          <span class="station-marker" aria-hidden="true"><span></span></span><span class="station-name">Movie Inbox</span><span class="station-platforms" aria-hidden="true"><span class="platform-tag is-emphasized">Web</span><span class="platform-tag">Android</span></span>
+        </button>
+        <button class="project-station lexidex-station r-lexidex-station" type="button" data-project="lexidex" aria-pressed="false" aria-controls="project-card" aria-label="Lexidex">
+          <span class="station-marker" aria-hidden="true"><span></span></span><span class="station-name">Lexidex</span><span class="station-platforms" aria-hidden="true"><span class="platform-tag is-emphasized">Mobile</span><span class="platform-tag">Web</span></span>
+        </button>
+      </section>
+      <section class="games-network r-games-network" id="videogames" aria-labelledby="games-title">
+        <h2 class="games-heading r-games-heading" id="games-title" data-es="Videojuegos" data-en="Video games">Videojuegos</h2>
+        <svg class="games-rail r-games-rail" viewBox="0 0 1110 170" preserveAspectRatio="none" aria-hidden="true">
+          <path class="rail-stem rail-copper" d="M0 4H1110"/><path class="rail-tail rail-tail-copper" d="M1110 4H1245"/><path class="rail-branch rail-copper" d="M207 4C238 4 248 16 263 39L304 123C311 132 320 134 331 134H350"/><circle class="rail-end rail-end-copper" cx="0" cy="4" r="5"/><circle class="rail-end rail-end-copper" cx="1110" cy="4" r="5"/>
+        </svg>
+        
+        <button class="game-station tdv1-node r-tdv1-node" type="button" data-project="tdv1" aria-pressed="false" aria-controls="project-card" aria-label="TDv1, en desarrollo"><span class="station-marker" aria-hidden="true"><span></span></span><span class="game-name r-tdv1-name">TDv1</span><span class="game-status r-tdv1-status">En desarrollo /<br>In development</span></button>
+        <button class="game-station tdv2-node r-tdv2-node" type="button" data-project="tdv2" aria-pressed="false" aria-controls="project-card" aria-label="TDv2, en desarrollo"><span class="station-marker" aria-hidden="true"><span></span></span><span class="game-name r-tdv2-name">TDv2</span><span class="game-status r-tdv2-status">En desarrollo /<br>In development</span></button>
+        <button class="game-station td3d-node r-td3d-node" type="button" data-project="td3d" aria-pressed="false" aria-controls="project-card" aria-label="TD3D, subproducto de TDv1, en desarrollo"><span class="station-marker" aria-hidden="true"><span></span></span><span class="game-name r-td3d-name">TD3D</span><span class="game-relation r-td3d-relation">Subproducto / Subproduct</span><span class="game-status r-td3d-status">En desarrollo / In development</span></button>
+        <button class="game-station formerwalker-node r-formerwalker-node" type="button" data-project="formerWalker" aria-pressed="false" aria-controls="project-card" aria-label="Former Walker, en desarrollo"><span class="station-marker" aria-hidden="true"><span></span></span><span class="game-name r-formerwalker-name">Former Walker</span><span class="game-status r-formerwalker-status">En desarrollo /<br>In development</span></button>
+      </section>
+      <svg class="selected-link r-selected-link" viewBox="0 0 5 100" preserveAspectRatio="none" aria-hidden="true"><path d="M2.5 0V100"/></svg>
+      <section class="project-card card-shell" id="project-card" aria-live="polite" aria-label="Ficha del proyecto seleccionado">
+        <div class="card-edge card-top r-card-top" aria-hidden="true"></div><div class="card-edge card-left r-card-left" aria-hidden="true"></div><div class="card-edge card-right r-card-right" aria-hidden="true"></div><div class="card-edge card-bottom r-card-bottom" aria-hidden="true"></div>
+        <div class="card-copy r-card-copy">
+          <h2 class="card-title r-card-title" id="card-title">Movie Inbox</h2>
+          <div class="platform-controls r-platform-controls" id="platform-controls" role="group" aria-label="Plataforma"><button type="button" class="platform-button is-active" data-platform="web" aria-pressed="true">Web</button><button type="button" class="platform-button" data-platform="android" aria-pressed="false">Android</button></div>
+          <div class="bilingual-copy" id="public-copy">
+            <p class="description-row"><span class="language-tag r-spanish-tag">ES</span><span class="description-text r-spanish-description" id="description-es">Aplicación web para guardar películas de interés, organizar una lista personal y llevar un seguimiento de lo que quieres ver y lo que ya has visto.</span></p>
+            <p class="description-row"><span class="language-tag r-english-tag">EN</span><span class="description-text r-english-description" id="description-en">Web application to save movies of interest, organize a personal list and keep track of what you want to watch and what you have already seen.</span></p>
+          </div>
+          <p class="private-status" id="private-status" hidden>En desarrollo / In development</p>
+          <div class="card-bottom-row"><a class="repo-action r-repo-action" id="repo-action" href="https://github.com/pasaporteN25/MovieCache" target="_blank" rel="noreferrer"><span data-es="Ver repositorio en GitHub" data-en="View repository on GitHub">Ver repositorio en GitHub</span><span class="external-mark" aria-hidden="true"></span></a></div>
+        </div>
+        <figure class="preview-frame r-preview-frame" id="preview-frame"><img class="concept-preview r-concept-preview" src="assets/plates/concept-preview.png" alt="Interfaz conceptual de un catálogo de películas"/><figcaption class="preview-caption r-preview-caption">Interfaz conceptual / Conceptual interface</figcaption></figure>
+      </section>
+      <footer class="about-section r-about-section" id="about">
+        <div class="about-rule r-about-rule" aria-hidden="true"></div>
+        <h2 class="about-headline r-about-headline">Desarrollador nativo<br>de <span>Android e iOS</span></h2>
+        <div class="about-divider r-about-dividers" aria-hidden="true"></div>
+        <p class="about-copy about-es r-about-es">Experiencia en Python, Java y JavaScript.<br>Entusiasta de la informática y la electrónica;<br>quiero contribuir a la comunidad open source.</p>
+        <div class="about-divider about-divider-right r-about-dividers-right" aria-hidden="true"></div>
+        <p class="about-copy about-en r-about-en">Native Android and iOS developer<br>with experience in Python, Java and JavaScript.<br>I want to contribute to the open source community.</p>
+        <div class="about-divider about-divider-en r-about-dividers-en" aria-hidden="true"></div>
+      </footer>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
+
+
+
