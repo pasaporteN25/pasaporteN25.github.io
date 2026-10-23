@@ -1,0 +1,121 @@
+/* Measured desktop positions for the portfolio map; percentages scale with the stage. */
+:root {
+  --r-brand-x: 3.320%; --r-brand-y: 1.910%; --r-brand-w: 18.270%; --r-brand-h: 4.020%;
+  --r-brand-cap: 28px; --r-brand-font: 40px; --r-brand-family: 'Finlandica Text'; --r-brand-weight: 700;
+  --r-navigation-x: 66.450%; --r-navigation-y: 2.490%; --r-navigation-w: 29.900%; --r-navigation-h: 3.060%;
+  --r-left-index-x: 1.660%; --r-left-index-y: 10.720%; --r-left-index-w: 10.960%; --r-left-index-h: 7.460%;
+  --r-software-heading-x: 19.730%; --r-software-heading-y: 10.330%; --r-software-heading-w: 16.610%; --r-software-heading-h: 2.680%;
+  --r-software-heading-cap: 13px; --r-software-heading-font: 20px;
+  --r-software-rail-x: 19.930%; --r-software-rail-y: 13.970%; --r-software-rail-w: 73.090%; --r-software-rail-h: 1.340%;
+  --r-movie-station-x: 31.960%; --r-movie-station-y: 13.110%; --r-movie-station-w: 10.630%; --r-movie-station-h: 8.800%;
+  --r-lexidex-station-x: 61.460%; --r-lexidex-station-y: 13.110%; --r-lexidex-station-w: 10.630%; --r-lexidex-station-h: 8.800%;
+  --r-games-heading-x: 19.800%; --r-games-heading-y: 23.920%; --r-games-heading-w: 10.630%; --r-games-heading-h: 2.680%;
+  --r-games-heading-cap: 14px; --r-games-heading-font: 21px;
+  --r-games-rail-x: 25.580%; --r-games-rail-y: 26.790%; --r-games-rail-w: 67.440%; --r-games-rail-h: 12.630%;
+  --r-selected-link-x: 32.620%; --r-selected-link-y: 21.910%; --r-selected-link-w: 0.330%; --r-selected-link-h: 4.590%;
+  --r-card-top-x: 19.930%; --r-card-top-y: 41.820%; --r-card-top-w: 77.410%; --r-card-top-h: 0.290%;
+  --r-card-left-x: 19.470%; --r-card-left-y: 42.010%; --r-card-left-w: 0.530%; --r-card-left-h: 39.900%;
+  --r-card-right-x: 96.880%; --r-card-right-y: 42.010%; --r-card-right-w: 0.530%; --r-card-right-h: 39.900%;
+  --r-card-bottom-x: 19.930%; --r-card-bottom-y: 81.910%; --r-card-bottom-w: 76.940%; --r-card-bottom-h: 0.290%;
+  --r-card-title-x: 21.460%; --r-card-title-y: 44.980%; --r-card-title-w: 17.940%; --r-card-title-h: 4.020%;
+  --r-card-title-cap: 26px; --r-card-title-font: 36px; --r-card-title-family: 'Bricolage Grotesque'; --r-card-title-weight: 700;
+  --r-platform-controls-x: 21.530%; --r-platform-controls-y: 49.570%; --r-platform-controls-w: 13.290%; --r-platform-controls-h: 4.210%;
+  --r-spanish-description-x: 24.580%; --r-spanish-description-y: 55.690%; --r-spanish-description-w: 26.910%; --r-spanish-description-h: 6.700%;
+  --r-spanish-description-cap: 12px; --r-spanish-description-font: 18px;
+  --r-english-description-x: 24.580%; --r-english-description-y: 63.640%; --r-english-description-w: 26.910%; --r-english-description-h: 6.890%;
+  --r-english-description-cap: 12px; --r-english-description-font: 18px;
+  --r-repo-action-x: 21.530%; --r-repo-action-y: 74.450%; --r-repo-action-w: 19.930%; --r-repo-action-h: 4.690%;
+  --r-preview-frame-x: 56.880%; --r-preview-frame-y: 44.310%; --r-preview-frame-w: 38.140%; --r-preview-frame-h: 36.270%;
+  --r-preview-caption-x: 65.450%; --r-preview-caption-y: 78.180%; --r-preview-caption-w: 21.930%; --r-preview-caption-h: 1.910%;
+  --r-preview-caption-cap: 10px; --r-preview-caption-font: 15px;
+  --r-about-headline-x: 3.320%; --r-about-headline-y: 87.940%; --r-about-headline-w: 23.920%; --r-about-headline-h: 7.460%;
+  --r-about-headline-cap: 26px; --r-about-headline-font: 37px;
+  --r-about-es-x: 32.760%; --r-about-es-y: 88.420%; --r-about-es-w: 28.570%; --r-about-es-h: 6.700%;
+  --r-about-es-cap: 12px; --r-about-es-font: 18px;
+  --r-about-en-x: 66.450%; --r-about-en-y: 88.420%; --r-about-en-w: 29.240%; --r-about-en-h: 6.700%;
+  --r-about-en-cap: 12px; --r-about-en-font: 18px;
+  --r-tdv1-name-x: 33.620%; --r-tdv1-name-y: 28.710%; --r-tdv1-name-w: 4.650%; --r-tdv1-name-h: 2.010%;
+  --r-tdv1-name-cap: 12px; --r-tdv1-name-font: 17px;
+  --r-tdv1-status-x: 33.620%; --r-tdv1-status-y: 30.810%; --r-tdv1-status-w: 9.440%; --r-tdv1-status-h: 3.250%;
+  --r-tdv1-status-cap: 8px; --r-tdv1-status-font: 13px;
+  --r-tdv2-name-x: 47.510%; --r-tdv2-name-y: 28.710%; --r-tdv2-name-w: 4.650%; --r-tdv2-name-h: 2.010%;
+  --r-tdv2-name-cap: 12px; --r-tdv2-name-font: 17px;
+  --r-tdv2-status-x: 47.510%; --r-tdv2-status-y: 30.810%; --r-tdv2-status-w: 9.440%; --r-tdv2-status-h: 3.250%;
+  --r-tdv2-status-cap: 11px; --r-tdv2-status-font: 16px;
+  --r-td3d-name-x: 48.170%; --r-td3d-name-y: 35.310%; --r-td3d-name-w: 4.650%; --r-td3d-name-h: 2.010%;
+  --r-td3d-name-cap: 12px; --r-td3d-name-font: 18px;
+  --r-td3d-relation-x: 48.170%; --r-td3d-relation-y: 37.320%; --r-td3d-relation-w: 12.290%; --r-td3d-relation-h: 1.910%;
+  --r-td3d-relation-cap: 10px; --r-td3d-relation-font: 16px;
+  --r-td3d-status-x: 48.170%; --r-td3d-status-y: 39.230%; --r-td3d-status-w: 12.290%; --r-td3d-status-h: 1.910%;
+  --r-td3d-status-cap: 9px; --r-td3d-status-font: 13px;
+  --r-formerwalker-name-x: 76.740%; --r-formerwalker-name-y: 28.710%; --r-formerwalker-name-w: 9.970%; --r-formerwalker-name-h: 2.010%;
+  --r-formerwalker-name-cap: 12px; --r-formerwalker-name-font: 17px;
+  --r-formerwalker-status-x: 76.740%; --r-formerwalker-status-y: 30.810%; --r-formerwalker-status-w: 10.300%; --r-formerwalker-status-h: 3.250%;
+  --r-formerwalker-status-cap: 10px; --r-formerwalker-status-font: 15px;
+  --r-concept-preview-x: 58.340%; --r-concept-preview-y: 46.410%; --r-concept-preview-w: 35.280%; --r-concept-preview-h: 28.710%;
+  --r-tdv1-node-x: 33.220%; --r-tdv1-node-y: 25.650%; --r-tdv1-node-w: 2.390%; --r-tdv1-node-h: 2.870%;
+  --r-tdv2-node-x: 47.240%; --r-tdv2-node-y: 25.650%; --r-tdv2-node-w: 2.390%; --r-tdv2-node-h: 2.870%;
+  --r-td3d-node-x: 45.710%; --r-td3d-node-y: 34.930%; --r-td3d-node-w: 2.260%; --r-td3d-node-h: 2.870%;
+  --r-formerwalker-node-x: 76.680%; --r-formerwalker-node-y: 25.550%; --r-formerwalker-node-w: 1.990%; --r-formerwalker-node-h: 2.970%;
+  --r-spanish-tag-x: 21.530%; --r-spanish-tag-y: 55.790%; --r-spanish-tag-w: 1.860%; --r-spanish-tag-h: 2.110%;
+  --r-english-tag-x: 21.530%; --r-english-tag-y: 63.640%; --r-english-tag-w: 1.860%; --r-english-tag-h: 2.110%;
+  --r-english-tag-cap: 11px; --r-english-tag-font: 16px;
+  --r-about-rule-x: 2.860%; --r-about-rule-y: 84.590%; --r-about-rule-w: 94.350%; --r-about-rule-h: 0.190%;
+  --r-about-dividers-x: 13.160%; --r-about-dividers-y: 87.850%; --r-about-dividers-w: 0.130%; --r-about-dividers-h: 7.660%;
+  --r-about-dividers-right-x: 30.700%; --r-about-dividers-right-y: 87.850%; --r-about-dividers-right-w: 0.130%; --r-about-dividers-right-h: 7.660%;
+  --r-about-dividers-en-x: 63.920%; --r-about-dividers-en-y: 87.850%; --r-about-dividers-en-w: 0.130%; --r-about-dividers-en-h: 7.660%;
+  --r-software-network-x: 19.270%; --r-software-network-y: 10.330%; --r-software-network-w: 73.750%; --r-software-network-h: 11.670%;
+  --r-games-network-x: 19.270%; --r-games-network-y: 23.920%; --r-games-network-w: 73.750%; --r-games-network-h: 16.170%;
+  --r-card-copy-x: 20.600%; --r-card-copy-y: 44.210%; --r-card-copy-w: 33.550%; --r-card-copy-h: 35.890%;
+  --r-about-section-x: 2.860%; --r-about-section-y: 84.590%; --r-about-section-w: 94.350%; --r-about-section-h: 11.480%;
+}
+
+.comp-frame { position: relative; width: 100%; aspect-ratio: 1505 / 1045; overflow: hidden; }
+.r-brand { position: absolute; left: var(--r-brand-x); top: var(--r-brand-y); width: var(--r-brand-w); height: var(--r-brand-h); }
+.r-navigation { position: absolute; left: var(--r-navigation-x); top: var(--r-navigation-y); width: var(--r-navigation-w); height: var(--r-navigation-h); }
+.r-left-index { position: absolute; left: var(--r-left-index-x); top: var(--r-left-index-y); width: var(--r-left-index-w); height: var(--r-left-index-h); }
+.r-software-heading { position: absolute; left: var(--r-software-heading-x); top: var(--r-software-heading-y); width: var(--r-software-heading-w); height: var(--r-software-heading-h); }
+.r-software-rail { position: absolute; left: var(--r-software-rail-x); top: var(--r-software-rail-y); width: var(--r-software-rail-w); height: var(--r-software-rail-h); }
+.r-movie-station { position: absolute; left: var(--r-movie-station-x); top: var(--r-movie-station-y); width: var(--r-movie-station-w); height: var(--r-movie-station-h); }
+.r-lexidex-station { position: absolute; left: var(--r-lexidex-station-x); top: var(--r-lexidex-station-y); width: var(--r-lexidex-station-w); height: var(--r-lexidex-station-h); }
+.r-games-heading { position: absolute; left: var(--r-games-heading-x); top: var(--r-games-heading-y); width: var(--r-games-heading-w); height: var(--r-games-heading-h); }
+.r-games-rail { position: absolute; left: var(--r-games-rail-x); top: var(--r-games-rail-y); width: var(--r-games-rail-w); height: var(--r-games-rail-h); }
+.r-selected-link { position: absolute; left: var(--r-selected-link-x); top: var(--r-selected-link-y); width: var(--r-selected-link-w); height: var(--r-selected-link-h); }
+.r-card-top { position: absolute; left: var(--r-card-top-x); top: var(--r-card-top-y); width: var(--r-card-top-w); height: var(--r-card-top-h); }
+.r-card-left { position: absolute; left: var(--r-card-left-x); top: var(--r-card-left-y); width: var(--r-card-left-w); height: var(--r-card-left-h); }
+.r-card-right { position: absolute; left: var(--r-card-right-x); top: var(--r-card-right-y); width: var(--r-card-right-w); height: var(--r-card-right-h); }
+.r-card-bottom { position: absolute; left: var(--r-card-bottom-x); top: var(--r-card-bottom-y); width: var(--r-card-bottom-w); height: var(--r-card-bottom-h); }
+.r-card-title { position: absolute; left: var(--r-card-title-x); top: var(--r-card-title-y); width: var(--r-card-title-w); height: var(--r-card-title-h); }
+.r-platform-controls { position: absolute; left: var(--r-platform-controls-x); top: var(--r-platform-controls-y); width: var(--r-platform-controls-w); height: var(--r-platform-controls-h); }
+.r-spanish-description { position: absolute; left: var(--r-spanish-description-x); top: var(--r-spanish-description-y); width: var(--r-spanish-description-w); height: var(--r-spanish-description-h); }
+.r-english-description { position: absolute; left: var(--r-english-description-x); top: var(--r-english-description-y); width: var(--r-english-description-w); height: var(--r-english-description-h); }
+.r-repo-action { position: absolute; left: var(--r-repo-action-x); top: var(--r-repo-action-y); width: var(--r-repo-action-w); height: var(--r-repo-action-h); }
+.r-preview-frame { position: absolute; left: var(--r-preview-frame-x); top: var(--r-preview-frame-y); width: var(--r-preview-frame-w); height: var(--r-preview-frame-h); }
+.r-preview-caption { position: absolute; left: var(--r-preview-caption-x); top: var(--r-preview-caption-y); width: var(--r-preview-caption-w); height: var(--r-preview-caption-h); }
+.r-about-headline { position: absolute; left: var(--r-about-headline-x); top: var(--r-about-headline-y); width: var(--r-about-headline-w); height: var(--r-about-headline-h); }
+.r-about-es { position: absolute; left: var(--r-about-es-x); top: var(--r-about-es-y); width: var(--r-about-es-w); height: var(--r-about-es-h); }
+.r-about-en { position: absolute; left: var(--r-about-en-x); top: var(--r-about-en-y); width: var(--r-about-en-w); height: var(--r-about-en-h); }
+.r-tdv1-name { position: absolute; left: var(--r-tdv1-name-x); top: var(--r-tdv1-name-y); width: var(--r-tdv1-name-w); height: var(--r-tdv1-name-h); }
+.r-tdv1-status { position: absolute; left: var(--r-tdv1-status-x); top: var(--r-tdv1-status-y); width: var(--r-tdv1-status-w); height: var(--r-tdv1-status-h); }
+.r-tdv2-name { position: absolute; left: var(--r-tdv2-name-x); top: var(--r-tdv2-name-y); width: var(--r-tdv2-name-w); height: var(--r-tdv2-name-h); }
+.r-tdv2-status { position: absolute; left: var(--r-tdv2-status-x); top: var(--r-tdv2-status-y); width: var(--r-tdv2-status-w); height: var(--r-tdv2-status-h); }
+.r-td3d-name { position: absolute; left: var(--r-td3d-name-x); top: var(--r-td3d-name-y); width: var(--r-td3d-name-w); height: var(--r-td3d-name-h); }
+.r-td3d-relation { position: absolute; left: var(--r-td3d-relation-x); top: var(--r-td3d-relation-y); width: var(--r-td3d-relation-w); height: var(--r-td3d-relation-h); }
+.r-td3d-status { position: absolute; left: var(--r-td3d-status-x); top: var(--r-td3d-status-y); width: var(--r-td3d-status-w); height: var(--r-td3d-status-h); }
+.r-formerwalker-name { position: absolute; left: var(--r-formerwalker-name-x); top: var(--r-formerwalker-name-y); width: var(--r-formerwalker-name-w); height: var(--r-formerwalker-name-h); }
+.r-formerwalker-status { position: absolute; left: var(--r-formerwalker-status-x); top: var(--r-formerwalker-status-y); width: var(--r-formerwalker-status-w); height: var(--r-formerwalker-status-h); }
+.r-concept-preview { position: absolute; left: var(--r-concept-preview-x); top: var(--r-concept-preview-y); width: var(--r-concept-preview-w); height: var(--r-concept-preview-h); }
+.r-tdv1-node { position: absolute; left: var(--r-tdv1-node-x); top: var(--r-tdv1-node-y); width: var(--r-tdv1-node-w); height: var(--r-tdv1-node-h); }
+.r-tdv2-node { position: absolute; left: var(--r-tdv2-node-x); top: var(--r-tdv2-node-y); width: var(--r-tdv2-node-w); height: var(--r-tdv2-node-h); }
+.r-td3d-node { position: absolute; left: var(--r-td3d-node-x); top: var(--r-td3d-node-y); width: var(--r-td3d-node-w); height: var(--r-td3d-node-h); }
+.r-formerwalker-node { position: absolute; left: var(--r-formerwalker-node-x); top: var(--r-formerwalker-node-y); width: var(--r-formerwalker-node-w); height: var(--r-formerwalker-node-h); }
+.r-spanish-tag { position: absolute; left: var(--r-spanish-tag-x); top: var(--r-spanish-tag-y); width: var(--r-spanish-tag-w); height: var(--r-spanish-tag-h); }
+.r-english-tag { position: absolute; left: var(--r-english-tag-x); top: var(--r-english-tag-y); width: var(--r-english-tag-w); height: var(--r-english-tag-h); }
+.r-about-rule { position: absolute; left: var(--r-about-rule-x); top: var(--r-about-rule-y); width: var(--r-about-rule-w); height: var(--r-about-rule-h); }
+.r-about-dividers { position: absolute; left: var(--r-about-dividers-x); top: var(--r-about-dividers-y); width: var(--r-about-dividers-w); height: var(--r-about-dividers-h); }
+.r-about-dividers-right { position: absolute; left: var(--r-about-dividers-right-x); top: var(--r-about-dividers-right-y); width: var(--r-about-dividers-right-w); height: var(--r-about-dividers-right-h); }
+.r-about-dividers-en { position: absolute; left: var(--r-about-dividers-en-x); top: var(--r-about-dividers-en-y); width: var(--r-about-dividers-en-w); height: var(--r-about-dividers-en-h); }
+.r-software-network { position: absolute; left: var(--r-software-network-x); top: var(--r-software-network-y); width: var(--r-software-network-w); height: var(--r-software-network-h); }
+.r-games-network { position: absolute; left: var(--r-games-network-x); top: var(--r-games-network-y); width: var(--r-games-network-w); height: var(--r-games-network-h); }
+.r-card-copy { position: absolute; left: var(--r-card-copy-x); top: var(--r-card-copy-y); width: var(--r-card-copy-w); height: var(--r-card-copy-h); }
+.r-about-section { position: absolute; left: var(--r-about-section-x); top: var(--r-about-section-y); width: var(--r-about-section-w); height: var(--r-about-section-h); }
