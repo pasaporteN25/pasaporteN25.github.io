@@ -1,7 +1,7 @@
 (() => {
   const projects = {
     movieInbox: {
-      title: "Movie Inbox", type: "public", platforms: ["web", "android"], labels: ["Web", "Android"], active: "web",
+      title: "Movie Inbox", type: "public", platforms: ["web", "android"], labels: ["Web", "Android"], active: "web", preview: true,
       repos: { web: "https://github.com/pasaporteN25/MovieCache", android: "https://github.com/pasaporteN25/MovieCacheAndroid" },
       descriptions: {
         web: { es: "Aplicación web para guardar películas de interés, organizar una lista personal y llevar un seguimiento de lo que quieres ver y lo que ya has visto.", en: "Web application to save movies of interest, organize a personal list and keep track of what you want to watch and what you have already seen." },
@@ -19,24 +19,23 @@
     tdv1: { title: "TDv1", type: "private" }, tdv2: { title: "TDv2", type: "private" },
     td3d: { title: "TD3D", type: "private" }, formerWalker: { title: "Former Walker", type: "private" }
   };
+
+  const map = document.querySelector("#map");
   const card = document.querySelector("#project-card");
+  const link = document.querySelector("#selected-link");
   const title = document.querySelector("#card-title");
   const controls = document.querySelector("#platform-controls");
   const copy = document.querySelector("#public-copy");
   const status = document.querySelector("#private-status");
+  const bottomRow = document.querySelector("#card-bottom-row");
   const repo = document.querySelector("#repo-action");
   const preview = document.querySelector("#preview-frame");
   const descEs = document.querySelector("#description-es");
   const descEn = document.querySelector("#description-en");
   const stations = [...document.querySelectorAll("[data-project]")];
+  const stacked = window.matchMedia("(max-width: 760px)");
   let activeProject = "movieInbox";
 
-  function configurePlatforms(project) {
-    [...controls.querySelectorAll("[data-platform]")].forEach((button, index) => {
-      button.dataset.platform = project.platforms[index];
-      button.textContent = project.labels[index];
-    });
-  }
   function setPlatform(project, platform) {
     if (!project.platforms.includes(platform)) return;
     project.active = platform;
@@ -49,6 +48,21 @@
     descEn.textContent = project.descriptions[platform].en;
     repo.href = project.repos[platform];
   }
+
+  // Draws the dotted connector from the selected station down to the card.
+  function positionLink() {
+    const station = stations.find((item) => item.classList.contains("is-selected"));
+    if (!station || stacked.matches) return;
+    const origin = map.getBoundingClientRect();
+    const marker = station.querySelector(".station-marker").getBoundingClientRect();
+    const top = marker.bottom - origin.top + 6;
+    const height = card.getBoundingClientRect().top - origin.top - top;
+    link.style.left = `${marker.left + marker.width / 2 - origin.left - 1.5}px`;
+    link.style.top = `${top}px`;
+    link.style.height = `${Math.max(height, 0)}px`;
+    link.classList.toggle("is-game", Boolean(station.closest(".games-network")));
+  }
+
   function selectProject(id) {
     const project = projects[id];
     if (!project) return;
@@ -61,18 +75,26 @@
     title.textContent = project.title;
     const isPrivate = project.type === "private";
     card.classList.toggle("is-private", isPrivate);
-    card.classList.toggle("is-text-only", id === "lexidex");
+    card.classList.toggle("is-text-only", !isPrivate && !project.preview);
     controls.hidden = isPrivate;
     copy.hidden = isPrivate;
+    bottomRow.hidden = isPrivate;
     status.hidden = !isPrivate;
-    repo.hidden = isPrivate;
-    preview.hidden = id !== "movieInbox";
+    preview.hidden = !project.preview;
     if (!isPrivate) {
-      configurePlatforms(project);
+      controls.querySelectorAll("[data-platform]").forEach((button, index) => {
+        button.dataset.platform = project.platforms[index];
+        button.textContent = project.labels[index];
+      });
       setPlatform(project, project.active);
     }
+    positionLink();
   }
-  stations.forEach((station) => station.addEventListener("click", () => selectProject(station.dataset.project)));
+
+  stations.forEach((station) => station.addEventListener("click", () => {
+    selectProject(station.dataset.project);
+    if (stacked.matches) card.scrollIntoView({ block: "nearest" });
+  }));
   controls.addEventListener("click", (event) => {
     const button = event.target.closest("[data-platform]");
     if (button) setPlatform(projects[activeProject], button.dataset.platform);
@@ -82,24 +104,9 @@
     document.documentElement.lang = language;
     document.querySelectorAll("[data-es][data-en]").forEach((element) => { element.textContent = element.dataset[language]; });
     document.querySelectorAll("[data-language]").forEach((item) => item.setAttribute("aria-pressed", String(item.dataset.language === language)));
+    positionLink();
   }));
-  selectProject("movieInbox");
-})();
-(() => {
-  const anchors = {
-    movieInbox: [34.55, 16.5], lexidex: [62.8, 16.5],
-    tdv1: [34.5, 28.4], tdv2: [48.5, 28.4], td3d: [46.8, 37.7], formerWalker: [77.8, 28.4]
-  };
-  const stage = document.querySelector(".stage");
-  const buttons = [...document.querySelectorAll("[data-project]")];
-  function updateSelectedLine(id) {
-    const [x, y] = anchors[id] || anchors.movieInbox;
-    stage.style.setProperty("--selected-x", `${x}%`);
-    stage.style.setProperty("--selected-y", `${y}%`);
-    stage.classList.toggle("is-game-selected", ["tdv1", "tdv2", "td3d", "formerWalker"].includes(id));
-  }
-  buttons.forEach((button) => button.addEventListener("click", () => {
-    updateSelectedLine(button.dataset.project);
-  }));
-  updateSelectedLine("movieInbox");
+
+  new ResizeObserver(positionLink).observe(map);
+  selectProject(activeProject);
 })();
