@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#081818">
     <meta name="description" content="Portfolio de pasaporteN25: proyectos de software, aplicaciones móviles y videojuegos en desarrollo.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pasaporten25.github.io/">
+    <meta property="og:title" content="pasaporteN25 — proyectos en movimiento">
+    <meta property="og:description" content="Software, aplicaciones móviles y videojuegos en desarrollo. / Software, mobile apps and games in development.">
+    <meta name="twitter:card" content="summary">
     <title>pasaporteN25 — proyectos en movimiento</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23081818'/%3E%3Cpath d='M3 16h26' stroke='%2351e3ed' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23081818' stroke='%2351e3ed' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='2.5' fill='%2351e3ed'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -14,13 +23,13 @@
     <header class="topbar">
       <div class="wrap topbar-inner">
         <h1 class="brand">pasaporteN25</h1>
-        <nav class="navigation" aria-label="Navegación principal">
-          <a class="nav-link is-active" href="#software" data-es="Proyectos" data-en="Projects">Proyectos</a>
-          <a class="nav-link" href="#about" data-es="Acerca de mí" data-en="About">Acerca de mí</a>
-          <div class="language-switch" role="group" aria-label="Idioma">
-            <button type="button" data-language="es" aria-pressed="true">ES</button><span aria-hidden="true">|</span><button type="button" data-language="en" aria-pressed="false">EN</button>
+        <nav class="navigation" aria-label="Navegación principal" data-aria-es="Navegación principal" data-aria-en="Main navigation">
+          <a class="nav-link is-active" id="nav-projects" href="#software" data-es="Proyectos" data-en="Projects">Proyectos</a>
+          <a class="nav-link" id="nav-about" href="#about" data-es="Acerca de mí" data-en="About">Acerca de mí</a>
+          <div class="language-switch" role="group" aria-label="Idioma" data-aria-es="Idioma" data-aria-en="Language">
+            <button type="button" data-language="es" aria-pressed="true" aria-label="Español">ES</button><span aria-hidden="true">|</span><button type="button" data-language="en" aria-pressed="false" aria-label="English">EN</button>
           </div>
-          <a class="profile-link" href="https://github.com/pasaporteN25" target="_blank" rel="noreferrer" aria-label="Ver perfil de pasaporteN25 en GitHub">
+          <a class="profile-link" href="https://github.com/pasaporteN25" target="_blank" rel="noreferrer" aria-label="Ver perfil de pasaporteN25 en GitHub" data-aria-es="Ver perfil de pasaporteN25 en GitHub" data-aria-en="View pasaporteN25's profile on GitHub">
             <svg class="github-mark" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
             <span>GitHub</span>
           </a>
@@ -29,14 +38,14 @@
     </header>
 
     <main class="wrap layout" id="top">
-      <nav class="left-index" aria-label="Líneas de trabajo">
-        <a href="#software" class="index-item index-software"><span class="index-dot" aria-hidden="true"></span><span data-es="Software / Mobile" data-en="Software / Mobile">Software / Mobile</span></a>
+      <nav class="left-index" aria-label="Líneas de trabajo" data-aria-es="Líneas de trabajo" data-aria-en="Lines of work">
+        <a href="#software" class="index-item index-software"><span class="index-dot" aria-hidden="true"></span><span>Software / Mobile</span></a>
         <a href="#videogames" class="index-item index-games"><span class="index-dot" aria-hidden="true"></span><span data-es="Videojuegos" data-en="Video games">Videojuegos</span></a>
       </nav>
 
       <div class="map" id="map">
         <section class="network software-network" id="software" aria-labelledby="software-title">
-          <h2 class="network-heading" id="software-title" data-es="Software / Mobile" data-en="Software / Mobile">Software / Mobile</h2>
+          <h2 class="network-heading" id="software-title">Software / Mobile</h2>
           <div class="rail">
             <span class="rail-line" aria-hidden="true"></span><span class="rail-tail" aria-hidden="true"></span>
             <button class="station is-selected" style="--x: 16%" type="button" data-project="movieInbox" aria-pressed="true" aria-controls="project-card">
@@ -54,38 +63,35 @@
           <h2 class="network-heading" id="games-title" data-es="Videojuegos" data-en="Video games">Videojuegos</h2>
           <div class="rail">
             <span class="rail-line" aria-hidden="true"></span><span class="rail-tail" aria-hidden="true"></span>
-            <svg class="rail-branch" style="--x: 16%" viewBox="0 0 110 96" aria-hidden="true"><path d="M0 2C24 2 32 12 42 30L64 74C70 86 78 94 92 94H110"/></svg>
-            <button class="station" style="--x: 16%" type="button" data-project="tdv1" aria-pressed="false" aria-controls="project-card">
+            <svg class="rail-branch" style="--x: 16%" viewBox="0 0 110 108" aria-hidden="true"><path d="M0 2C24 2 32 12 42 30L66 86C72 98 80 106 94 106H110"/></svg>
+            <button class="station" style="--x: 16%" type="button" data-project="monstersAndCanons" aria-pressed="false" aria-controls="project-card">
               <span class="station-marker" aria-hidden="true"></span>
-              <span class="station-label"><span class="station-name">TDv1</span><span class="station-status">En desarrollo / <br>In development</span></span>
+              <span class="station-label"><span class="station-name">Monsters &amp; Canons</span><span class="station-status" data-es="En desarrollo" data-en="In development">En desarrollo</span></span>
             </button>
-            <button class="station station-branch" style="--x: 16%" type="button" data-project="td3d" aria-pressed="false" aria-controls="project-card">
+            <div class="station station-branch is-static" style="--x: 16%">
               <span class="station-marker" aria-hidden="true"></span>
-              <span class="station-label"><span class="station-name">TD3D</span><span class="station-status">Subproducto / Subproduct</span><span class="station-status">En desarrollo / In development</span></span>
-            </button>
-            <button class="station" style="--x: 46%" type="button" data-project="tdv2" aria-pressed="false" aria-controls="project-card">
+              <span class="station-label"><span class="station-name">TD3D</span><span class="station-status" data-es="Derivado · En desarrollo" data-en="Spin-off · In development">Derivado · En desarrollo</span></span>
+            </div>
+            <div class="station is-static" style="--x: 52%">
               <span class="station-marker" aria-hidden="true"></span>
-              <span class="station-label"><span class="station-name">TDv2</span><span class="station-status">En desarrollo / <br>In development</span></span>
-            </button>
-            <button class="station" style="--x: 76%" type="button" data-project="formerWalker" aria-pressed="false" aria-controls="project-card">
+              <span class="station-label"><span class="station-name">TDv2</span><span class="station-status" data-es="En desarrollo" data-en="In development">En desarrollo</span></span>
+            </div>
+            <div class="station is-static" style="--x: 78%">
               <span class="station-marker" aria-hidden="true"></span>
-              <span class="station-label"><span class="station-name">Former Walker</span><span class="station-status">En desarrollo / <br>In development</span></span>
-            </button>
+              <span class="station-label"><span class="station-name">Former Walker</span><span class="station-status" data-es="En desarrollo" data-en="In development">En desarrollo</span></span>
+            </div>
           </div>
         </section>
 
         <span class="selected-link" id="selected-link" aria-hidden="true"></span>
 
-        <section class="project-card" id="project-card" aria-live="polite" aria-label="Ficha del proyecto seleccionado">
+        <section class="project-card" id="project-card" aria-live="polite" aria-label="Ficha del proyecto seleccionado" data-aria-es="Ficha del proyecto seleccionado" data-aria-en="Selected project card">
           <div class="card-copy">
             <h2 class="card-title" id="card-title">Movie Inbox</h2>
-            <div class="platform-controls" id="platform-controls" role="group" aria-label="Plataforma"><button type="button" class="platform-button is-active" data-platform="web" aria-pressed="true">Web</button><button type="button" class="platform-button" data-platform="android" aria-pressed="false">Android</button></div>
-            <div class="bilingual-copy" id="public-copy">
-              <p class="description-row"><span class="language-tag">ES</span><span class="description-text" id="description-es" lang="es">Aplicación web para guardar películas de interés, organizar una lista personal y llevar un seguimiento de lo que quieres ver y lo que ya has visto.</span></p>
-              <p class="description-row"><span class="language-tag">EN</span><span class="description-text" id="description-en" lang="en">Web application to save movies of interest, organize a personal list and keep track of what you want to watch and what you have already seen.</span></p>
-            </div>
-            <p class="private-status" id="private-status" hidden>En desarrollo / In development</p>
-            <div class="card-bottom-row" id="card-bottom-row">
+            <div class="platform-controls" id="platform-controls" role="group" aria-label="Plataforma" data-aria-es="Plataforma" data-aria-en="Platform"><button type="button" class="platform-button is-active" data-platform="web" aria-pressed="true">Web</button><button type="button" class="platform-button" data-platform="android" aria-pressed="false">Android</button></div>
+            <p class="card-description" id="card-description">Aplicación web para guardar películas de interés, organizar una lista personal y llevar un seguimiento de lo que quieres ver y lo que ya has visto.</p>
+            <ul class="card-meta" id="card-meta" aria-label="Tecnologías" data-aria-es="Tecnologías" data-aria-en="Technologies"><li>Python</li><li>JavaScript</li><li>GPL v3</li></ul>
+            <div class="card-bottom-row">
               <a class="repo-action" id="repo-action" href="https://github.com/pasaporteN25/MovieCache" target="_blank" rel="noreferrer">
                 <svg class="github-mark" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
                 <span data-es="Ver repositorio en GitHub" data-en="View repository on GitHub">Ver repositorio en GitHub</span>
@@ -93,18 +99,25 @@
               </a>
             </div>
           </div>
-          <figure class="preview-frame" id="preview-frame">
-            <img class="concept-preview" src="assets/plates/concept-preview.png" alt="Interfaz conceptual de un catálogo de películas">
-            <figcaption class="preview-caption">Interfaz conceptual / Conceptual interface</figcaption>
+          <figure class="preview-frame" id="preview-frame" hidden>
+            <img class="preview-image" id="preview-image" src="assets/screens/monsters-and-canons.png" alt="" width="1280" height="720" loading="lazy">
+            <figcaption class="preview-caption" id="preview-caption"></figcaption>
           </figure>
         </section>
       </div>
     </main>
 
     <footer class="wrap about-section" id="about">
-      <h2 class="about-headline">Desarrollador nativo<br>de <span>Android e iOS</span></h2>
-      <p class="about-copy" lang="es">Experiencia en Python, Java y JavaScript. Entusiasta de la informática y la electrónica; quiero contribuir a la comunidad open source.</p>
-      <p class="about-copy" lang="en">Native Android and iOS developer with experience in Python, Java and JavaScript. I want to contribute to the open source community.</p>
+      <h2 class="about-headline" data-lang="es" lang="es">Desarrollador nativo<br>de <span>Android e iOS</span></h2>
+      <h2 class="about-headline" data-lang="en" lang="en">Native <span>Android and iOS</span><br>developer</h2>
+      <div class="about-body">
+        <p class="about-copy" data-lang="es" lang="es">Experiencia en Python, Java y JavaScript. Entusiasta de la informática y la electrónica; quiero contribuir a la comunidad open source.</p>
+        <p class="about-copy" data-lang="en" lang="en">Experienced in Python, Java and JavaScript. A computing and electronics enthusiast who wants to contribute to the open source community.</p>
+        <a class="repo-action" href="https://github.com/pasaporteN25" target="_blank" rel="noreferrer">
+          <span data-es="Ver perfil en GitHub" data-en="View profile on GitHub">Ver perfil en GitHub</span>
+          <span class="external-mark" aria-hidden="true">↗</span>
+        </a>
+      </div>
     </footer>
 
     <script src="script.js" defer></script>
